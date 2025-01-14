@@ -23,7 +23,6 @@ ul {
     list-style: none;
     padding: 0;
     justify-content: center;
-    margin: 0;
 }
 
 li {
@@ -82,13 +81,9 @@ button {
 #btAdicionar:hover {
     background-color: #e34343;
     color: #fff;
+    border-style: hidden;
 }
 
-nav {
-    margin-bottom: 50px;
-}
-
-/* Media Queries para responsividade */
 @media (max-width: 768px) {
     .container {
         width: 100%;
@@ -117,11 +112,6 @@ nav {
     footer {
         font-size: 0.8rem;
     }
-
-    button {
-        font-size: 0.9rem;
-        padding: 10px;
-    }
 }
 
 @media (max-width: 480px) {
@@ -130,27 +120,16 @@ nav {
         padding: 8px;
     }
 
-    ul {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 0 10px;
-    }
-
-    li {
-        margin: 5px 0;
-    }
-
-    footer {
-        font-size: 0.7rem;
+    button {
+        font-size: 0.9rem;
+        padding: 10px;
     }
 
     input {
         font-size: 0.9rem;
-        padding: 8px;
     }
 
-    button {
-        font-size: 0.8rem;
-        padding: 8px;
+    footer {
+        font-size: 0.7rem;
     }
 }

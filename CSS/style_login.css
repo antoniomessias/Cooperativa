@@ -1,9 +1,12 @@
-.container{
+.container {
     background-color: #edf2f4;
     width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-.nome{
-    background-color:#ef233c ;
+
+.nome {
+    background-color: #ef233c;
     font-family: "Kanit", serif;
     font-weight: 500;
     font-style: normal;
@@ -11,19 +14,33 @@
     border-radius: 5px;
     height: 55px;
     text-align: center;
+    font-size: 1.2rem;
 }
-li{
-    display: inline;
-    margin-right: 30px;
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    margin: 0;
 }
-footer{
-    background-color:#ef233c ;
+
+li {
+    margin: 10px 15px;
+    font-size: 1rem;
+}
+
+footer {
+    background-color: #ef233c;
     color: #fff;
     height: 45px;
     text-align: center;
     border-radius: 5px;
     margin-top: 50px;
+    font-size: 0.9rem;
 }
+
 .login {
     background-color: white;
     padding: 20px;
@@ -58,4 +75,84 @@ footer{
 .login input[type="button"]:hover {
     background-color: #ef233c;
     color: #fff;
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .nome {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        margin: 5px 0;
+        font-size: 0.9rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+
+    .login {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .login input[type="text"], 
+    .login input[type="password"] {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .login input[type="button"] {
+        padding: 12px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nome {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 10px;
+    }
+
+    li {
+        margin: 5px 0;
+    }
+
+    footer {
+        font-size: 0.7rem;
+    }
+
+    .login {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .login input[type="text"], 
+    .login input[type="password"] {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .login input[type="button"] {
+        padding: 12px;
+        font-size: 14px;
+    }
 }

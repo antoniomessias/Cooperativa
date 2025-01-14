@@ -1,9 +1,12 @@
-.container{
+.container {
     background-color: #edf2f4;
     width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-.nome{
-    background-color:#ef233c ;
+
+.nome {
+    background-color: #ef233c;
     font-family: "Kanit", serif;
     font-weight: 500;
     font-style: normal;
@@ -11,44 +14,135 @@
     border-radius: 5px;
     height: 55px;
     text-align: center;
+    font-size: 1.2rem;
 }
-li{
-    display: inline;
-    margin-right: 30px;
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    margin: 0;
 }
-footer{
-    background-color:#ef233c ;
+
+li {
+    margin: 10px 15px;
+    font-size: 1rem;
+}
+
+footer {
+    background-color: #ef233c;
     color: #fff;
     height: 45px;
     text-align: center;
     border-radius: 5px;
     margin-top: 50px;
+    font-size: 0.9rem;
 }
+
 #customers {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
     margin-top: 30px;
 }
-  
+
 #customers td, #customers th {
     border: 1px solid #ddd;
     padding: 8px;
 }
-#customers tr:nth-child(even){background-color: #f2f2f2;}
-#customers tr:hover {background-color: #ddd;}
+
+#customers tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+    background-color: #ddd;
+}
+
 #customers th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
     background-color: #e13f3f;
-    color:white;
+    color: white;
 }
-h2{
+
+h2 {
     font-family: "Kanit", serif;
     font-weight: 500;
     font-style: normal;
 }
-section{
+
+section {
     text-align: center;
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .nome {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        margin: 5px 0;
+        font-size: 0.9rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+
+    #customers td, #customers th {
+        padding: 6px;
+    }
+
+    #customers th {
+        font-size: 0.9rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nome {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 10px;
+    }
+
+    li {
+        margin: 5px 0;
+    }
+
+    footer {
+        font-size: 0.7rem;
+    }
+
+    #customers td, #customers th {
+        padding: 5px;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
 }

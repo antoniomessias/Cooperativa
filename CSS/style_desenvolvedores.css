@@ -4,11 +4,13 @@ body {
     font-family: "Courier New", monospace;
     text-align: center;
     padding: 20px;
+    font-size: 16px;
 }
 
 /* Container principal */
 .container {
     width: 80%;
+    max-width: 1200px;
     margin: auto;
     border: 2px solid green;
     padding: 20px;
@@ -24,12 +26,16 @@ h1, h2, h3 {
     color: limegreen;
 }
 
+h1 {
+    font-size: 56px;
+}
+
 /* Seção principal */
 section {
     text-align: left;
     margin-top: 20px;
     padding: 10px;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 /* Rodapé */
@@ -60,6 +66,42 @@ a:hover {
 .blink {
     animation: blink 1s step-start infinite;
 }
-h1{
-    font-size: 56px;
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    section {
+        font-size: 1.2rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    section {
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
 }

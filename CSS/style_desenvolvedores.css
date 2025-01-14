@@ -1,0 +1,65 @@
+body {
+    background-color: black;
+    color: green;
+    font-family: "Courier New", monospace;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Container principal */
+.container {
+    width: 80%;
+    margin: auto;
+    border: 2px solid green;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    border-bottom: 2px solid green;
+    padding-bottom: 10px;
+}
+
+h1, h2, h3 {
+    color: limegreen;
+}
+
+/* Seção principal */
+section {
+    text-align: left;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 24px;
+}
+
+/* Rodapé */
+footer {
+    margin-top: 20px;
+    border-top: 2px solid green;
+    padding-top: 10px;
+}
+
+/* Links */
+a {
+    color: limegreen;
+    text-decoration: none;
+}
+
+a:hover {
+    color: lightgreen;
+    text-decoration: underline;
+}
+
+/* Efeito de texto piscando */
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.blink {
+    animation: blink 1s step-start infinite;
+}
+h1{
+    font-size: 56px;
+}

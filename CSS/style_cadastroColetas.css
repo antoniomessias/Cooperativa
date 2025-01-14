@@ -1,0 +1,65 @@
+.container{
+    background-color: #edf2f4;
+    width: 90%;
+}
+.nome{
+    background-color:#ef233c ;
+    font-family: "Kanit", serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #fff;
+    border-radius: 5px;
+    height: 55px;
+    text-align: center;
+}
+li{
+    display: inline;
+    margin-right: 30px;
+}
+footer{
+    background-color:#ef233c ;
+    color: #fff;
+    height: 45px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+h2 {
+    text-align: center;
+    color: #333;
+    font-family: "Kanit", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+button {
+    width: 100%;
+    background-color: #ef233c;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#btAdicionar:hover {
+    background-color: #e34343;
+    color: #fff;
+    border-style:hidden;
+    border-color: #333;
+}
